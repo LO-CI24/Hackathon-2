@@ -27,22 +27,24 @@ footer p {
     font-size: 14px;
 }
 
-header {
+.heading-text {
     color: #f5f5f5;
     font-family: 'Noto Sans', sans-serif;
     font-size: 20px;
     font-weight: 600;
-    margin-left: 50px;
     margin-top: 25px;
+    min-width: 100%;
+    padding-left: 25px;
 }
 
 /*** Header style sections **/
 
-.header {
+.header-box {
     min-height: 10vh;
     min-width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 /*** Body style sections **/
@@ -54,12 +56,41 @@ header {
     top: 10vh;
 }
 
+#hero {
+    max-height: 300px;
+    min-width: 100%;
+    position: relative;
+}
+
+
 /*** Foooter style section **/
 
 .footer-bottom {
     min-height: 10vh;
-    margin: -100;
     min-width: 100%;
     position: absolute;
     bottom: 0;
+}
+
+/** Container override **/
+
+.container-override {
+    min-width: 100%;
+}
+
+.padding-margin-override {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
+
+.container {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
 }
