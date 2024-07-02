@@ -57,9 +57,11 @@ footer p {
 }
 
 #hero {
-    max-height: 300px;
+    max-height: 200px;
     min-width: 100%;
+    background-color: url(../assets/images/forex-board.webp);
     position: relative;
+    z-index: 2;
 }
 
 
