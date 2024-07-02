@@ -1,0 +1,57 @@
+/*** Background style sections **/
+
+.header-dark-green {
+    background-color: #52796F;
+}
+
+.body-light-green {
+    background-color: #84A98C;
+}
+
+.background-footer {
+    background-color: #2F3E46;
+}
+
+/*** Text style section **/
+
+p {
+    color: #F5F5F5;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+header {
+    color: #f5f5f5;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+/*** Header style sections **/
+
+.header {
+    min-height: 10vh;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+/*** Body style sections **/
+
+.body-light-green{
+    min-height: 80vh;
+    min-width: 100%;
+    position: absolute;
+    top: 10vh;
+}
+
+/*** Foooter style section **/
+
+.footer-bottom {
+    min-height: 10vh;
+    margin: -100;
+    min-width: 100%;
+    position: absolute;
+    bottom: 0;
+}
