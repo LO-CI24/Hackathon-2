@@ -24,7 +24,7 @@
   <!--- HEADER  -->
 
   <header>
-    <div class="container">
+    <div class="container container-override">
       <div class="row header-box header-dark-green">
         <div class="col-12">
           <h1 class="heading-text">Take the Money and Run</h1>
@@ -36,57 +36,57 @@
 
   <!--- MAIN  -->
 
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div id="hero"></div>
+      </div>
+    </div>
+  </div>
 
   <main>
-
-    <section>
-      <div class="col-12" id="hero"></div>
-    </section>
-
     <section class="background-main">
-      <div class="body body-light-green body-text">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 text-center">
-              <div class="row">
-                <div class="col-12">
-                  <div class="input-group mb-3">
-                    <span class="input-group-text">$</span>
-                    <input type="text" class="form-control" aria-label="Amount of your current currency">
-                  </div>
+      <div class="container container-override">
+        <div class="row body body-light-green body-text">
+          <div class="col-12 text-center">
+            <div class="row">
+              <div class="col-12">
+                <div class="input-group mb-3">
+                  <span class="input-group-text">$</span>
+                  <input type="text" class="form-control" aria-label="Amount of your current currency">
+                </div>
 
-                  <div class="input-group mb-3">
-                    <label class="input-group-text" for="inputGroupSelect01"
-                      aria-label="Currency you currently hold">Currency you hold</label>
-                    <select class="form-select" id="inputGroupSelect01">
-                      <option selected>Choose...</option>
-                      <option value="British Pounds (GBP)">British Pounds (GBP)</option>
-                      <option value="US Dollars (USD)">US Dollars (USD)</option>
-                      <option value="Euros (EUR)">Euros (EUR)</option>
-                    </select>
-                  </div>
+                <div class="input-group mb-3">
+                  <label class="input-group-text" for="inputGroupSelect01"
+                    aria-label="Currency you currently hold">Currency you hold</label>
+                  <select class="form-select" id="inputGroupSelect01">
+                    <option selected>Choose...</option>
+                    <option value="British Pounds (GBP)">British Pounds (GBP)</option>
+                    <option value="US Dollars (USD)">US Dollars (USD)</option>
+                    <option value="Euros (EUR)">Euros (EUR)</option>
+                  </select>
+                </div>
 
-                  <div class="input-group mb-3">
-                    <label class="input-group-text" for="inputGroupSelect03" aria-label="Currency you want">Currency you
-                      want</label>
-                    <select class="form-select" id="inputGroupSelect03">
-                      <option selected>Choose...</option>
-                      <option value="British Pounds (GBP)">British Pounds (GBP)</option>
-                      <option value="US Dollars (USD)">US Dollars (USD)</option>
-                      <option value="Euros (EUR)">Euros (EUR)</option>
-                    </select>
-                  </div>
+                <div class="input-group mb-3">
+                  <label class="input-group-text" for="inputGroupSelect03" aria-label="Currency you want">Currency you
+                    want</label>
+                  <select class="form-select" id="inputGroupSelect03">
+                    <option selected>Choose...</option>
+                    <option value="British Pounds (GBP)">British Pounds (GBP)</option>
+                    <option value="US Dollars (USD)">US Dollars (USD)</option>
+                    <option value="Euros (EUR)">Euros (EUR)</option>
+                  </select>
+                </div>
 
-                  <div>
-                    <form>
-                      <input type="submit" value="Convert"></input>
-                    </form>
-                  </div>
+                <div>
+                  <form>
+                    <input type="submit" value="Convert"></input>
+                  </form>
+                </div>
 
-                  <div class="input-group mb-3">
-                    <span class="input-group-text">$</span>
-                    <input type="text" class="form-control" aria-label="Amount of your converted currency">
-                  </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text">$</span>
+                  <input type="text" class="form-control" aria-label="Amount of your converted currency">
                 </div>
               </div>
             </div>
@@ -98,7 +98,7 @@
 
   <!--- FOOTER  -->
   <footer class="footer-bottom background-footer">
-    <div class="container">
+    <div class="container container-override">
       <div class="row footer-bottom">
         <div class="col-4">
           <p class="text-center">

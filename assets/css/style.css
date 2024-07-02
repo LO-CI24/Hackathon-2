@@ -42,8 +42,9 @@ footer p {
 .header-box {
     min-height: 10vh;
     min-width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 /*** Body style sections **/
@@ -56,11 +57,11 @@ footer p {
 }
 
 #hero {
-    height: 200px;
-    width: 100%;
-    background: url(../assets/images/forex-board.webp) no-repeat center/cover;
+    max-height: 300px;
+    min-width: 100%;
     position: relative;
 }
+
 
 /*** Foooter style section **/
 
