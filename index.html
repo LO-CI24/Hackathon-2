@@ -23,46 +23,25 @@
         <div class="col-12 no-gutters">
             <header class="money-header">Take the Money and Run</header>
         </div>
-    </div>
-    <div class="row body body-light-green no-gutters body-text">
-        <div class="col-12 text-center no-gutters">
-            <p>Test text</p>
-            <div class="input-group mb-3">
-                <span class="input-group-text">$</span>
-                <input type="text" class="form-control" aria-label="Amount of your current currency">               
-              </div>
-              
-              <div class="input-group mb-3">
-                <label class="input-group-text" for="inputGroupSelect01 aria-label="Currency you currently hold">Currency you hold</label>
-                <select class="form-select" id="inputGroupSelect01">
-                  <option selected>Choose...</option>
-                  <option value="British Pounds (GBP)">British Pounds (GBP)</option>
-                  <option value="US Dollars (USD)">US Dollars (USD)</option>
-                  <option value="Euros (EUR)">Euros (EUR)</option>
-                </select>
-              </div>
-              
-              <div class="input-group mb-3">
-                <label class="input-group-text" for="inputGroupSelect03" aria-label="Currency you want">Currency you want</label>
-                <select class="form-select" id="inputGroupSelect03">
-                  <option selected>Choose...</option>
-                  <option value="British Pounds (GBP)">British Pounds (GBP)</option>
-                  <option value="US Dollars (USD)">US Dollars (USD)</option>
-                  <option value="Euros (EUR)">Euros (EUR)</option>
-                </select>
-              </div>
-              
-              <div>
-                <form>
-                    <input type="submit" value="Convert"></input>
-                </form>
-              </div>
-
-              <div class="input-group mb-3">
-                <span class="input-group-text">$</span>
-                <input type="text" class="form-control" aria-label="Amount of your converted currency">
-              </div>       
-        </div>
+    <div class="container">
+        <h2>Currency Converter</h2>
+        <input type="number" id="amount" placeholder="Enter amount">
+        <select id="sourceCurrency">
+            <option value="USD">US Dollar (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">British Pound (GBP)</option>
+            <option value="JPY">Japanese Yen (JPY)</option>
+            <option value="AUD">Australian Dollar (AUD)</option>
+        </select>
+        <select id="targetCurrency">
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">British Pound (GBP)</option>
+            <option value="JPY">Japanese Yen (JPY)</option>
+            <option value="AUD">Australian Dollar (AUD)</option>
+            <option value="USD">US Dollar (USD)</option>
+        </select>
+        <button onclick="convertCurrency()">Convert</button>
+        <p id="result"></p>
     </div>
     <footer class="footer-bottom background-footer">
         <div class="row footer-bottom no-gutters">
@@ -72,14 +51,14 @@
                 </p>
             </div>
             <div class="col-4 no-gutters">
-                
             </div>
             <div class="col-4 no-gutters">
                 <p class="text-center">Attribtuions</p>
             </div>
         </div>
     </footer>
-    <script src="assets/js/script.js"></script>
-</body>
+    <script src="assets/js/script.js">
+    </script>
+    </body>
 
 </html>
