@@ -1,11 +1,11 @@
 /*** Background style sections **/
 
 .header-dark-green {
-    background-color: #52796F;
+    background-color: #2F3E46;
 }
 
 .body-light-green {
-    background-color: #84A98C;
+    background-color: #64906E;
 }
 
 .background-footer {
@@ -14,9 +14,17 @@
 
 /*** Text style section **/
 
-p {
+.body-text {
     color: #F5F5F5;
     font-family: 'Noto Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+footer p {
+    color: #f5f5f5;
+    font-family: 'Noto Sanss', sans-serif;
+    font-size: 14px;
 }
 
 header {
