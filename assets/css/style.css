@@ -1,8 +1,9 @@
 /*** Background style sections **/
 
-.header-dark-green {
+#bg-dark {
     background-color: #2F3E46;
-}
+    height: 130px;
+} 
 
 .body-light-green {
     background-color: #64906E;
@@ -27,14 +28,16 @@ footer p {
     font-size: 14px;
 }
 
-.heading-text {
-    color: #f5f5f5;
-    font-family: 'Noto Sans', sans-serif;
+.navbar-brand {
     font-size: 20px;
-    font-weight: 600;
-    margin-top: 25px;
-    min-width: 100%;
-    padding-left: 25px;
+    color: #f5f5f5;
+    text-decoration: none;
+    white-space: nowrap;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#navbar {
+
 }
 
 /*** Header style sections **/
@@ -56,13 +59,6 @@ footer p {
     top: 10vh;
 }
 
-#hero {
-    max-height: 200px;
-    min-width: 100%;
-    background-color: url(../assets/images/forex-board.webp);
-    position: relative;
-    z-index: 2;
-}
 
 
 /*** Foooter style section **/

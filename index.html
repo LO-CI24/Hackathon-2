@@ -24,36 +24,29 @@
   <!--- HEADER  -->
 
   <header>
-    <div class="container container-override">
-      <div class="row header-box header-dark-green">
-        <div class="col-12">
-          <h1 class="heading-text">Take the Money and Run</h1>
-        </div>
+    <nav class="navbar" id="bg-dark"> 
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1" id=>Take the Money and Run</span>
       </div>
-    </div>
+    </nav>
   </header>
 
 
   <!--- MAIN  -->
-
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div id="hero"></div>
-      </div>
-    </div>
-  </div>
-
   <main>
     <section class="background-main">
       <div class="container container-override">
         <div class="row body body-light-green body-text">
           <div class="col-12 text-center">
             <div class="row">
-              <div class="col-12">
+              <div class="col-12 col-md-6">
                 <input type="number" id="amount" placeholder="Enter amount">
               </div>
-              <div class="col-12">
+
+              <!--- Linebreaker Div -->
+              <div class="w-100"></div>
+
+              <div class="col-12 col-md-6">
                 <select id="sourceCurrency">
                   <option value="USD">US Dollar (USD)</option>
                   <option value="EUR">Euro (EUR)</option>
@@ -62,7 +55,11 @@
                   <option value="AUD">Australian Dollar (AUD)</option>
                 </select>
               </div>
-              <div class="col-12">
+
+              <!--- Linebreaker Div -->
+              <div class="w-100"></div>
+
+              <div class="col-12 col-md-6">
                 <select id="targetCurrency">
                   <option value="EUR">Euro (EUR)</option>
                   <option value="GBP">British Pound (GBP)</option>
@@ -71,7 +68,12 @@
                   <option value="USD">US Dollar (USD)</option>
                 </select>
               </div>
-              <div class="col-12">
+
+              <!--- Linebreaker Div -->
+              <div class="w-100"></div>
+
+
+              <div class="col-12 col-md-6">
                 <button onclick="convertCurrency()">Convert</button>
                 <p id="result"></p>
               </div>
