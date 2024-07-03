@@ -1,34 +1,21 @@
 // API key and URL
-
 API_KEY = "fca_live_p3caMsuvonzfVSnDQ1ExFvibMriDIk2yOZvjJRZJ"
-API_URL = "https://api.freecurrencyapi.com/v1/latest?apikey="
-
-// Make a GET request
-fetch(`${API_URL}${API_KEY}`)
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
+async function getConversionRates() {
+    const apiKey = 'fca_live_p3caMsuvonzfVSnDQ1ExFvibMriDIk2yOZvjJRZJ';
+    const apiUrl = `https://api.freecurrencyapi.com/v1/latest?apikey=${apiKey}`;
+    try {
+        const response = await fetch(apiUrl);
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        }
+        const data = await response.json();
+        return data.data;
+    } catch (error) {
+        console.error('Fetch error: ', error);
     }
-    return response.json();
-  })
-  .then(data => {
-    console.log(data);
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
-
-
-
-function convertCurrency() {
-    // Conversion rates relative to USD
-    const conversionRates = {
-        USD: 1,
-        EUR: 0.85,
-        GBP: 0.76,
-        JPY: 110.57,
-        AUD: 1.35
-    };
+}
+async function convertCurrency() {
+    const conversionRates = await getConversionRates();
     // Get the amount from the input field
     const amount = parseFloat(document.getElementById('amount').value);
     // Get the selected source and target currencies
