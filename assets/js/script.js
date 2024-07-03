@@ -1,14 +1,22 @@
 // API key and URL
 
 API_KEY = "fca_live_p3caMsuvonzfVSnDQ1ExFvibMriDIk2yOZvjJRZJ"
+API_URL = "https://api.freecurrencyapi.com/v1/latest?apikey="
 
-
-var oReq = new XMLHttpRequest();
-oReq.addEventListener("load", function () { console.log(this.responseText); });
-oReq.open("GET", `https://api.freecurrencyapi.com/v1/latest?apikey=${API_KEY}`);
-oReq.send();
-
-
+// Make a GET request
+fetch(`${API_URL}${API_KEY}`)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log(data);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
 
 
 
