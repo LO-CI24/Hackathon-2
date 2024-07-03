@@ -1,5 +1,4 @@
 // API key and URL
-API_KEY = "fca_live_p3caMsuvonzfVSnDQ1ExFvibMriDIk2yOZvjJRZJ"
 async function getConversionRates() {
     const apiKey = 'fca_live_p3caMsuvonzfVSnDQ1ExFvibMriDIk2yOZvjJRZJ';
     const apiUrl = `https://api.freecurrencyapi.com/v1/latest?apikey=${apiKey}`;
