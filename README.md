@@ -78,86 +78,26 @@ For our wire-framing, we decided to stick to low fidelity wireframes. This is du
 
 ##  5. How to Use Take the Money and Run
 
-The functionality of Take the Money and Run was kept as simplistic as possible, to avoid confusing the user or providing unnecessary information.
+The functionality of Take the Money and Run was kept as simplistic as possible, to avoid confusing the user or providing unnecessary information. There is only a single page as part of this application, meaning links internally were not necessary. Our footer contains two external links, to mandatory attributions which we had to make, towards two external pages. These pages are [FreePik](https://www.freepik.com/) and [Free Currency API](https://freecurrencyapi.com/). 
+
+The API itself, while using calculations behind the scenes, is a simple text input box, two dropdown input boxes, a button and a disabled text field.
+
+If the user inserts a float into the first text input box, and then selects two different currencies and submits, they will then receive in the final box an output calculated conversion. 
+
+This API is updated once daily by Free Currency API, meaning that these sums will only change once daily. 
 
 
 ##  6. Testing Documentation
 
-All links function as detail lists above.
-
-### Homepage
-
-![image](https://github.com/maria-grozova/Celebrating-Diversity/assets/139562112/ec97d196-f796-4167-9de9-369acd43bbde)
-
-### About Page
-
-![image](https://github.com/maria-grozova/Celebrating-Diversity/assets/139562112/52afaf6a-c74e-49c7-bbf3-4114c416518e)
-
-As can be seen, many errors. The majority of these errors came with Bootstrap, where expanding the Accordion on this page caused some duplicate ID tags. Additionally, an unordered list element was missing. These were resolved.
-
-After fix: 
-
-![image](https://github.com/maria-grozova/Celebrating-Diversity/assets/139562112/f2d814a3-c9a8-4b11-811d-1e2e8cf772f3)
-
-As visible, there is still a duplicate ID error here. However, after examination, there is no known source of it, and it is headlined as an item to fix in a future iteration.
-
-### Resources Page
-
-![image](https://github.com/maria-grozova/Celebrating-Diversity/assets/139562112/331e676f-8e58-4c4a-84b3-acecd8772966)
-
-### Contact Page
-
-![image](https://github.com/maria-grozova/Celebrating-Diversity/assets/139562112/9a46c0ad-41e2-42eb-bedc-eb89672fad6d)
-
-After fixes:
-
-![image](https://github.com/maria-grozova/Celebrating-Diversity/assets/139562112/a101e713-63f2-442f-aa07-139ca4767796)
-
-
-An unnecessary /div is found in the document.
-
-### Success Stories
-
-![image](https://github.com/maria-grozova/Celebrating-Diversity/assets/139562112/c197ead5-7eb3-4a6d-8618-fe908c041c6d)
-
-### Take Action
-
-![image](https://github.com/maria-grozova/Celebrating-Diversity/assets/139562112/a24343b4-d1d4-4321-93d1-f70dde10b6d3)
-
-There are errors in the Take Action page. Unfortunately, we do not currently understand how to 'fix' this iframe issue. 
-
-After fixes:
-![image](https://github.com/maria-grozova/Celebrating-Diversity/assets/139562112/c97229eb-1178-4f49-ba0e-415a2159c953)
-
-Although the iframe error redundancy was removed, which removes the error in the validator, it is still running a redundant code somewhat which is non-responsive.
-
-Itemised to fix in future update / iteration.
-
-### CSS
-
-![image](https://github.com/maria-grozova/Celebrating-Diversity/assets/139562112/7cab74a3-ac6a-4a85-8ae6-962adb87fa1c)
-
-There is a remnant redundant CSS line for home-content-text, which will be removed. There are wrong syntax elements for resources-title and contact-title. 
-
-After fixes:
-
-![image](https://github.com/maria-grozova/Celebrating-Diversity/assets/139562112/ce231056-e1d9-4eb5-9778-0b8aa950689f)
-
-
 
 ## 7. Credits
 
-This project was worked on and developed by a team of [INSERT FINAL COUNT] developers. 
+This project was worked on and developed by a team of 3 developers. 
 These developers are... 
   
-  **Team Leader / Project Manager / Scrum Leader**
-- **Maria Grozova** (https://github.com/maria-grozova)
-
-**UX Design / Lead**
-- **Aeryx Rose** (https://github.com/SubjugatorofCSS)
-
-**Documentation / Design / Flex / Bug Squasher Debugging**
-- **Carl Jones** (https://github.com/c-e-jones)
+**Leander Ots**
+**Ted Aymler**
+**Carl Jones**
   
 ##  8. Licencing Rights
 
@@ -165,16 +105,7 @@ For the construction of this website, we have used a number of assets which are 
 
 Tools used:
 - [Bootstrap](https://getbootstrap.com) (CC BY 3.0)
-- [Font Awesome](https://fontawesome.com/v4/icons/) (CC BY 3.0)
 - [Google Fonts](https://fonts.google.com) (SIL Open Font Licence)
 - [Pexels](https://www.pexels.com) (CC0)
-
-## 9. Other Documents
-
-Records of group meetings to discuss and deliberate the design process as well as daily stand-up and stand-down meetings can be found attached. 
-
-[Hackathon Meeting Minutes (Introductions) – 31  05  24.docx](https://github.com/user-attachments/files/15533321/Minutes.from.Hackathon.Meeting.31.05.24.docx)
-
-[Hackathon Meeting Minutes  - 03  06  24.docx](https://github.com/user-attachments/files/15533322/Hackathon.Meeting.Minutes.-.03.06.24.docx)
-
-[Hackathon Meeting Minutes – 03  06  24 (UX).docx](https://github.com/user-attachments/files/15536152/Hackathon.Meeting.Minutes.03.06.24.UX.docx)
+- [Free Currency API](https://freecurrencyapi.com/)
+- [FreePik](https://www.freepik.com/)
