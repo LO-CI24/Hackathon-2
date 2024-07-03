@@ -24,57 +24,121 @@
   <!--- HEADER  -->
 
   <header>
-    <div class="container container-override">
-      <div class="row header-box header-dark-green">
-        <div class="col-12">
-          <h1 class="heading-text">Take the Money and Run</h1>
-        </div>
-dev-carl
+    <nav class="navbar" id="bg-dark"> 
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1" id=>Take the Money and Run</span>
       </div>
-    </div>
+    </nav>
   </header>
 
 
   <!--- MAIN  -->
-
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div id="hero"></div>
-      </div>
-    </div>
-  </div>
-
   <main>
     <section class="background-main">
       <div class="container container-override">
         <div class="row body body-light-green body-text">
           <div class="col-12 text-center">
             <div class="row">
-              <div class="col-12">
-<input type="number" id="amount" placeholder="Enter amount">
-        <select id="sourceCurrency">
-            <option value="USD">US Dollar (USD)</option>
-            <option value="EUR">Euro (EUR)</option>
-            <option value="GBP">British Pound (GBP)</option>
-            <option value="JPY">Japanese Yen (JPY)</option>
-            <option value="AUD">Australian Dollar (AUD)</option>
-        </select>
-        <select id="targetCurrency">
-            <option value="EUR">Euro (EUR)</option>
-            <option value="GBP">British Pound (GBP)</option>
-            <option value="JPY">Japanese Yen (JPY)</option>
-            <option value="AUD">Australian Dollar (AUD)</option>
-            <option value="USD">US Dollar (USD)</option>
-        </select>
-        <button onclick="convertCurrency()">Convert</button>
-        <p id="result"></p>
-    </div>
-                </div>
+              <div class="col-12 col-md-6">
+                <input type="number" id="amount" placeholder="Enter amount" class="top-currency-box">
+              </div>
+
+              <!--- Linebreaker Div -->
+              <div class="w-100"></div>
+
+              <div class="col-12 col-md-6 currency-box">
+                <select id="sourceCurrency" class="selection-box">
+                  <option value="EUR">Euro (EUR)</option>
+                  <option value="USD" selected="selected">US Dollar USD</option>
+                  <option value="JPY">Japanese Yen JPY</option>
+                  <option value="BGN">Bulgarian Lev (BGN)</option>
+                  <option value="CZK">Czech Koruna (CZK)</option>
+                  <option value="DKK">Danish Krone (DKK)</option>
+                  <option value="GBP">Pound Sterling (GBP)</option>
+                  <option value="HUF">Hungarian Florint (HUF)</option>
+                  <option value="PLN">Polish Zloty (PLN)</option>
+                  <option value="RON">Romanian Leu (RON)</option>
+                  <option value="SEK">Swedish Krona (SEK)</option>
+                  <option value="CHF">Swiss Frank (CHF)</option>
+                  <option value="ISK">Icelandic Krona (ISK)</option>
+                  <option value="NOK">Norwegian Krone (NOK)</option>
+                  <option value="HRK">Croatian Kuna (HRK)</option>
+                  <option value="RUB">Russian Ruble (RUB)</option>
+                  <option value="TRY">Turkish Lira (TRY)</option>
+                  <option value="AUD">Australian Dollar (AUD)</option>
+                  <option value="BRL">Brazilian Real (BRL)</option>
+                  <option value="CAD">Canadian Dollar (CAD)</option>
+                  <option value="CNY">Chinese Yuan (CNY)</option>
+                  <option value="HKD">Hong Kong Dollar (HKD)</option>
+                  <option value="IDR">Indonesian Rupiah (IDR)</option>
+                  <option value="ILS">Israeli Sheqel (ILS)</option>
+                  <option value="INR">Indian Rupee (INR)</option>
+                  <option value="KRW">South Korean Won (KRW)</option>
+                  <option value="MXN">Mexican Peso (MXN)</option>
+                  <option value="MYR">Malaysian Ringgit (MYR)</option>
+                  <option value="NZD">NZ Dollar (NZD)</option>
+                  <option value="PHP">Philippine Peso (PHP)</option>
+                  <option value="SGD">Singapore Dollar (SGD)</option>
+                  <option value="THB">Thai Baht (THB)</option>
+                  <option value="ZAR">SA Rand (ZAR)</option>
+                </select>
+              </div>
+
+              <!--- Linebreaker Div -->
+              <div class="w-100"></div>
+
+              <div class="col-12 col-md-6 currency-box">
+                <select id="targetCurrency" class="selection-box">
+                  <option value="EUR" selected="selected">Euro (EUR)</option>
+                  <option value="USD">US Dollar USD</option>
+                  <option value="JPY">Japanese Yen JPY</option>
+                  <option value="BGN">Bulgarian Lev (BGN)</option>
+                  <option value="CZK">Czech Koruna (CZK)</option>
+                  <option value="DKK">Danish Krone (DKK)</option>
+                  <option value="GBP">Pound Sterling (GBP)</option>
+                  <option value="HUF">Hungarian Florint (HUF)</option>
+                  <option value="PLN">Polish Zloty (PLN)</option>
+                  <option value="RON">Romanian Leu (RON)</option>
+                  <option value="SEK">Swedish Krona (SEK)</option>
+                  <option value="CHF">Swiss Frank (CHF)</option>
+                  <option value="ISK">Icelandic Krona (ISK)</option>
+                  <option value="NOK">Norwegian Krone (NOK)</option>
+                  <option value="HRK">Croatian Kuna (HRK)</option>
+                  <option value="RUB">Russian Ruble (RUB)</option>
+                  <option value="TRY">Turkish Lira (TRY)</option>
+                  <option value="AUD">Australian Dollar (AUD)</option>
+                  <option value="BRL">Brazilian Real (BRL)</option>
+                  <option value="CAD">Canadian Dollar (CAD)</option>
+                  <option value="CNY">Chinese Yuan (CNY)</option>
+                  <option value="HKD">Hong Kong Dollar (HKD)</option>
+                  <option value="IDR">Indonesian Rupiah (IDR)</option>
+                  <option value="ILS">Israeli Sheqel (ILS)</option>
+                  <option value="INR">Indian Rupee (INR)</option>
+                  <option value="KRW">South Korean Won (KRW)</option>
+                  <option value="MXN">Mexican Peso (MXN)</option>
+                  <option value="MYR">Malaysian Ringgit (MYR)</option>
+                  <option value="NZD">NZ Dollar (NZD)</option>
+                  <option value="PHP">Philippine Peso (PHP)</option>
+                  <option value="SGD">Singapore Dollar (SGD)</option>
+                  <option value="THB">Thai Baht (THB)</option>
+                  <option value="ZAR">SA Rand (ZAR)</option>
+                </select>
+              </div>
+
+              <!--- Linebreaker Div -->
+              <div class="w-100"></div>
+
+
+              <div class="col-12 col-md-6 currency-box">
+                <button onclick="convertCurrency()" class="conversion-button">Convert</button>
+                <p id="result"></p>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      </div>
+      </div>
       </div>
     </section>
   </main>
@@ -99,5 +163,6 @@ dev-carl
   </footer>
   <script src="assets/js/script.js"></script>
 
-    </body>
+</body>
+
 </html>
