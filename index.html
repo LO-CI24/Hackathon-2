@@ -7,7 +7,6 @@
   <meta name="description" content="a currency conversion website that allows your to track historical rates">
   <meta name="keywords" content="forex, money, travel, pound, euro, dollar">
   <meta name="author" content="cj(s).jammers">
-  
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
@@ -21,35 +20,33 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
-  
   <title>Take the Money and Run!</title>
 </head>
 
 <body>
-
   <!--- HEADER  -->
-
   <header>
-    <nav class="navbar" id="bg-dark"> 
+    <nav class="navbar" id="bg-dark">
       <div class="container-fluid">
+        <div class="col-3"></div>
+        <div class="col-9">
+          <span class="navbar-brand mb-0 h1">
+              <img src="assets/images/logo.ico" alt="Logo" width="50" height="50"></span>
+          <span class="navbar-brand mb-0 h1">Take the Money<br>and Run!</span>
+      </div>
         <span class="navbar-brand mb-0 h1"> <img src="assets/images/logo.ico" alt="Logo" width="50" height="50">Take the Money and Run!</span>
       </div>
     </nav>
   </header>
-
-
   <!--- HERO IMAGE -->
-
   <div class="container-fluid">
     <div class="row">
       <div class="col">
         <div id="hero">
-          
         </div>
       </div>
     </div>
   </div>
-
   <!--- MAIN  -->
   <main>
     <section class="background-main">
@@ -60,10 +57,8 @@
               <div class="col-12">
                 <input type="number" id="amount" placeholder="Enter amount" class="top-currency-box">
               </div>
-
               <!--- Linebreaker Div -->
               <div class="w-100"></div>
-
               <div class="col-12 currency-box">
                 <select id="sourceCurrency" class="selection-box">
                   <option value="EUR">Euro (EUR)</option>
@@ -101,10 +96,8 @@
                   <option value="ZAR">SA Rand (ZAR)</option>
                 </select>
               </div>
-
               <!--- Linebreaker Div -->
               <div class="w-100"></div>
-
               <div class="col-12 currency-box">
                 <select id="targetCurrency" class="selection-box">
                   <option value="EUR" selected="selected">Euro (EUR)</option>
@@ -142,21 +135,18 @@
                   <option value="ZAR">SA Rand (ZAR)</option>
                 </select>
               </div>
-
               <!--- Linebreaker Div -->
               <div class="w-100"></div>
-
-
-              <div class="col-12 currency-box">
+              <div class="col-12">
                 <button onclick="convertCurrency()" class="conversion-button">Convert</button>
               </div>
-
+              <div class="col-12">
+                <input id="result" type="text" class="results-box" disabled placeholder="Your converted currency">
               <!--- Linebreaker Div -->
               <div class="w-100"></div>
 
               <div class="col-12 currency-box">
                 <input id="result" type="text" class="results-box" disabled>
-
               </div>
             </div>
           </div>
@@ -167,7 +157,6 @@
       </div>
     </section>
   </main>
-
   <!--- FOOTER  -->
   <footer class="footer-bottom background-footer">
     <div class="container container-override">
@@ -177,6 +166,11 @@
             ©: Cj(s).jammers, 2024
           </p>
         </div>
+        <div class="col-4">
+        </div>
+        <div class="col-4">
+          <p class="text-center">Attributions: <a href="https://freecurrencyapi.com/"
+              target="_blank">FreecurrencyAPI</a> <a href="https://www.freepik.com/" target="_blank">FreePik</a></p>
         <div class="col-8">
           <p class="text-center">Attributions: <a href="https://freecurrencyapi.com/" target="_blank">FreecurrencyAPI</a> <a href="https://www.freepik.com/" target="_blank">FreePik</a></p>
         </div>
@@ -184,6 +178,5 @@
     </div>
   </footer>
   <script src="assets/js/script.js"></script>
-
 </body>
 </html>

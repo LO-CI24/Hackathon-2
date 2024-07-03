@@ -24,6 +24,17 @@ footer p {
     margin-top: 25px;
     margin-bottom: 25px;
 }
+
+a {
+    color:#F5f5f5
+}
+
+a:hover {
+    color: #8a2525
+}
+
+=======
+main
 .navbar-brand {
     font-size: 20px;
     color: #F5F5F5;
@@ -31,9 +42,18 @@ footer p {
     white-space: nowrap;
     font-family: 'Noto Sans', sans-serif;
 }
+/**Bootstrap override for title hover function**/
+.navbar-brand:hover {
+    font-size: 20px;
+    color: #f5f5f5;
+    text-decoration: none;
+    white-space: nowrap;
+    font-family: 'Noto Sans', sans-serif;
+}
 .converted-sum {
     color: #2F3E46;
 }
+
 /*** Header style sections **/
 /*** Body style sections **/
 .top-currency-box {
@@ -42,21 +62,31 @@ footer p {
     font-size: 23px;
     font-family: "Noto Sans", sans-serif;
     font-weight: 500;
+    width: 300px; 
+
+} 
+
+=======
 }
 .currency-box {
     margin-top: 20px;
 }
+
 .results-box {
     background-color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 23px;
     font-family: "Noto Sans", sans-serif;
     font-weight: 500;
+    width: 300px;
 }
 .selection-box {
     max-width: 300px;
     font-size: 23px;
     font-family: "Noto Sans", sans-serif;
     font-weight: 500;
+    margin-bottom: 20px;
 }
 .conversion-button {
     background-color: #52796F;
@@ -66,6 +96,7 @@ footer p {
     font-family: "Noto Sans", sans-serif;]
     font-size: 23px;
     font-weight: 500;
+    width: 150px;
 }
 .conversion-button:hover {
     background-color: #F5F5F5;
