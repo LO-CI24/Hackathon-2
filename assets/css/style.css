@@ -6,8 +6,8 @@
 } 
 
 .body-light-green {
-    background-color: #64906E;
-    height: 52vh;
+    background-color: #64906e33;
+    height: 60vh;
 }
 
 .background-footer {
@@ -37,6 +37,10 @@ footer p {
     white-space: nowrap;
     font-family: 'Noto Sans', sans-serif;
     margin-left: 10%; 
+}
+
+.converted-sum {
+    color: #2F3E46;
 }
 
 /*** Header style sections **/
@@ -83,12 +87,12 @@ footer p {
 }
 
 #hero {
-    max-height: 25vh;
-    min-height: 25vh;
+    height: 25vh;
     width: 100%;
     background-image: url(../images/forex-board.webp);
-    position: relative;
-    z-index: 2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*** Foooter style section **/
