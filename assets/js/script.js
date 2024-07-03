@@ -28,5 +28,5 @@ async function convertCurrency() {
     const amountInUSD = amount / sourceToUSD;
     const convertedAmount = amountInUSD * targetFromUSD;
     // Display the result
-    document.getElementById('result').innerText = `Amount in ${targetCurrency}: ${convertedAmount.toFixed(2)}`;
+    document.getElementById('result').value = `Amount in ${targetCurrency}: ${convertedAmount.toFixed(2)}`;
 }
