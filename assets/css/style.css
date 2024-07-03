@@ -1,33 +1,28 @@
 /*** Background style sections **/
-
 #bg-dark {
     background-color: #2F3E46;
     height: 130px;
-} 
-
+}
 .body-light-green {
     background-color: #64906e33;
-    height: 60vh;
+    height: 80vh;
 }
-
 .background-footer {
     background-color: #2F3E46;
 }
-
 /*** Text style section **/
-
 .body-text {
     color: #F5F5F5;
     font-family: 'Noto Sans', sans-serif;
     font-size: 25px;
     font-weight: 500;
 }
-
 footer p {
-    color: #f5f5f5;
+    color: #F5F5F5;
     font-family: 'Noto Sans', sans-serif;
     font-size: 14px;
     margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 a {
@@ -38,9 +33,11 @@ a:hover {
     color: #8a2525
 }
 
+=======
+main
 .navbar-brand {
     font-size: 20px;
-    color: #f5f5f5;
+    color: #F5F5F5;
     text-decoration: none;
     white-space: nowrap;
     font-family: 'Noto Sans', sans-serif;
@@ -53,17 +50,12 @@ a:hover {
     white-space: nowrap;
     font-family: 'Noto Sans', sans-serif;
 }
-
 .converted-sum {
     color: #2F3E46;
 }
 
-
-
 /*** Header style sections **/
-
 /*** Body style sections **/
-
 .top-currency-box {
     margin-top: 75px;
     margin-bottom: 20px;
@@ -74,6 +66,12 @@ a:hover {
 
 } 
 
+=======
+}
+.currency-box {
+    margin-top: 20px;
+}
+
 .results-box {
     background-color: #fff;
     margin-top: 20px;
@@ -83,35 +81,31 @@ a:hover {
     font-weight: 500;
     width: 300px;
 }
-
 .selection-box {
-    max-width: 300px; 
+    max-width: 300px;
     font-size: 23px;
     font-family: "Noto Sans", sans-serif;
     font-weight: 500;
     margin-bottom: 20px;
 }
-
 .conversion-button {
-    background-color: #52796f;
-    color: #f5f5f5;
-    border-color: #f5f5f5;
+    background-color: #52796F;
+    color: #F5F5F5;
+    border-color: #F5F5F5;
     border-width: 1px;
     font-family: "Noto Sans", sans-serif;]
     font-size: 23px;
     font-weight: 500;
     width: 150px;
 }
-
 .conversion-button:hover {
-    background-color: #f5f5f5;
-    color: #52796f;
-    border-color: #52796f;
+    background-color: #F5F5F5;
+    color: #52796F;
+    border-color: #52796F;
     border-width: 3px;
     font-family: "Noto Sans", sans-serif;
     font-weight: 500;
 }
-
 #hero {
     height: 25vh;
     width: 100%;
@@ -120,39 +114,31 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 /*** Foooter style section **/
-
 .footer-bottom {
-    min-height: 10vh;
     min-width: 100%;
+    height: 85px;
     position: fixed;
     bottom: 0;
 }
-
 /** Container override **/
-
 .container-override {
     min-width: 100%;
 }
-
 .padding-margin-override {
     padding-left: 0px;
     padding-right: 0px;
     margin-left: 0px;
     margin-right: 0px;
 }
-
 .row {
     --bs-gutter-x: 0;
     --bs-gutter-y: 0;
 }
-
 .container {
     --bs-gutter-x: 0;
     --bs-gutter-y: 0;
-} 
-
+}
 .container-fluid {
     --bs-gutter-x: 0;
     --bs-gutter-y: 0;
