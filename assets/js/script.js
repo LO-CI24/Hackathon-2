@@ -61,6 +61,6 @@ async function convertCurrency() {
     // Convert the amount to the target currency
     const amountInUSD = amount / sourceToUSD;
     const convertedAmount = amountInUSD * targetFromUSD;
-    // Display the result
-    document.getElementById('result').value = `Amount in ${targetCurrency}: ${convertedAmount.toFixed(2)}`;
+    // Display the result. Output is three decimal places as number is rounded up
+    document.getElementById('result').value = `Amount in ${targetCurrency}: ${convertedAmount.toFixed(3)}`;
 }
