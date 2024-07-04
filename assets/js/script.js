@@ -72,3 +72,9 @@ async function convertCurrency() {
     document.getElementById('result').value = `Amount in ${targetCurrency}: ${convertedAmount.toLocaleString(undefined, {minimumFractionDigits: 3, maximumFractionDigits: 3})}`;
 }
 
+// check if the user hits enter instead of using button
+document.getElementById('amount').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        convertCurrency();
+    }
+});
