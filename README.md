@@ -231,7 +231,7 @@ These developers are...
   
 - **Leander Ots**
   
-- **Ted Aymler**
+- **Ted Aylmer**
   
 - **Carl Jones**
   
