@@ -11,7 +11,7 @@
 5. [How to Use Take the Money and Run](https://github.com/LO-CI24/Hackathon-2/blob/main/README.md#5-how-to-use-take-the-money-and-run)
 6. [Testing Documentation](https://github.com/LO-CI24/Hackathon-2/blob/main/README.md#6-testing-documentation)
 7. [Credits](https://github.com/LO-CI24/Hackathon-2/blob/main/README.md#7-credits)
-8. [Licensing Rights](https://github.com/LO-CI24/Hackathon-2/blob/main/README.md#8-licencing-rights)
+8. [Licensing Rights](https://github.com/LO-CI24/Hackathon-2/blob/main/README.md#8-licensing-rights)
 
 
 
@@ -87,6 +87,15 @@ This information is then passed into an async function. This function first pars
 
 ![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/4ea46faf-5f9c-4468-aacf-0559de539f5f)
 
+To ensure that our received inputs were appropriate, or were sums that could be converted into another sum which is possible currency, we also incorporated a validator. This validator would provide user feedback upon an incorrect input, based on the scale of the amount or whether it is a number.
+
+![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/84b70ea5-5ba0-4342-b250-d2c794865c59)
+
+Finally, there is an event listener which checks if the user has hit enter, instead of pushing the conversion button.
+
+![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/db54d4a8-9448-4698-b8e7-1fa97b1eb79e)
+
+
 **HTML**
 
 The HTML for the application calls on a number of external CDNs and libraries. As seen below, it calls on Bootstrap and Google Fonts.
@@ -130,6 +139,22 @@ The only true outliers in the CSS code are the specific overrides for Bootstrap 
 
 As seen above, a number of override inputs were necessary. This was due to our selection of Bootstrap 5.2, which is not the version of Bootstrap we learned upon. This means that the gutter functions and how they operate have changed, and it was more expedient to simply kill all of the guttering than to attempt to solve in the Sass / SCSS compilation for Bootstrap this information was stored.
 
+**Responsivity**
+
+This application is designed with a mobile-first approach, meaning that all functionality was designed with mobile users in mind first to a min-width of 320px, which is the smallest default phone width. This means that all elements on the site are responsive, adjusting to fill the space in a visually appealing way in the first instance. 
+
+**Mobile View**
+
+![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/1be9383c-695d-441f-9095-71990860594e)
+
+![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/b77f5e46-9cf5-4ae5-bcfb-4ca3daf0579a)
+
+**Desktop View**
+
+![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/066359c0-16aa-4c16-b40a-76faa04fc26d)
+
+Although it appears as if the footer is cut off, it is actually just the scroll length.
+
 ##  5. How to Use Take the Money and Run
 
 The functionality of Take the Money and Run was kept as simplistic as possible, to avoid confusing the user or providing unnecessary information. There is only a single page as part of this application, meaning links internally were not necessary. Our footer contains two external links, to mandatory attributions which we had to make, towards two external pages. These pages are [FreePik](https://www.freepik.com/) and [Free Currency API](https://freecurrencyapi.com/). 
@@ -143,15 +168,72 @@ This API is updated once daily by Free Currency API, meaning that these sums wil
 
 ##  6. Testing Documentation
 
+### Functionality Testing
+
+To test our application, we first ensured that all of our intended functions with JavaScript worked. To achieve this, we simply ran the tests which we had programmed. As our JS automatically clears the input box after submission, the input sums do not appear in these tests. For clarity, I have included the relevant sum beside. 
+
+**Correct Input Insertion (1GBP)**
+
+![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/a9860720-52fc-454a-b604-154f4b2d71a3)
+
+**A Conversion With An Input Which Is Too Small (-1GBP)**
+
+![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/88647537-efa6-4322-8722-165899be0b44)
+
+**An Input Which Is Too Large (11111111111111111111111111111111111GBP)**
+
+![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/7462c592-b452-4cb6-99f3-a28b0140a5fb)
+
+**An Input Which Is Not a Number (.)**
+
+![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/2fe5190c-e6ff-4d40-a73b-5197f74fd416)
+
+**Dropdown Functionality**
+
+![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/8c6f183c-9bbf-4e63-9a62-beecb104f983)
+
+![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/ba859b76-49d1-4af4-8c0d-63b8fe9e143a)
+
+Although it is impossible to present a pictorial demonstration, the functionality for the ENTER key producing the same result as pushing the convert button by an event listener also functions appropriately. 
+
+### Validation and Linting
+
+**HTML Validation**
+
+![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/e5878307-00db-45e8-98e5-73d63bac05c5)
+
+Our HTML validation was a simple fix - three unnecessary div end tags, all one line below the other. 
+
+![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/57bf5218-04f3-4aac-bf0a-12b5fe2a590f)
+
+**CSS Validation**
+
+![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/9aed4769-0cae-4ce0-bbbc-6dc0aef277a4)
+
+As seen above, there was an error wherein the footer had an incorrect attribute. This was resolved by simply changing the value to auto.
+
+![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/f3bbb1b9-d9fd-4471-bcea-db80495badf7)
+
+**JS Linter**
+
+![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/713646ec-36f0-4d3e-b9e7-fc87b2dba32f)
+
+As seen above, our JS provided no errors, however, it did provide a number of warnings. When we adjusted the settings to reflect the edition of JS we had written based upon, many of these warnings disappeared. 
+
+![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/aeb9c8ce-2ca5-4766-9ee7-1a016bfa2334)
+
+It was unclear how to clear these warnings, and they do not appear to have any effect on the code output. Due to this, we have left these warnings. 
 
 ## 7. Credits
 
 This project was worked on and developed by a team of 3 developers. 
 These developers are... 
   
-**Leander Ots**
-**Ted Aymler**
-**Carl Jones**
+- **Leander Ots**
+  
+- **Ted Aylmer**
+  
+- **Carl Jones**
   
 ##  8. Licensing Rights
 

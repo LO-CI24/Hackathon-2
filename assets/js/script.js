@@ -44,7 +44,7 @@ function validateAmount() {
         return false;
     }
 
-    
+
 
 
     // If all validation passes, return true
@@ -73,7 +73,7 @@ async function convertCurrency() {
 }
 
 // check if the user hits enter instead of using button
-document.getElementById('amount').addEventListener('keydown', function(event) {
+document.getElementById('amount').addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
         convertCurrency();
     }
