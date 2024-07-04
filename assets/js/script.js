@@ -13,7 +13,42 @@ async function getConversionRates() {
         console.error('Fetch error: ', error);
     }
 }
+
+// Validate the amount input
+function validateAmount() {
+    var amountInput = document.getElementById('amount');
+    var amountValue = amountInput.value.trim();
+
+    // is the input a valid number
+    if (isNaN(amountValue) || amountValue === '') {
+        document.getElementById('result').value = 'Invalid Input!';
+        amountInput.value = '';
+        return false;
+    }
+
+    // Convert the value to a number
+    var amount = parseFloat(amountValue);
+
+    // Set sensible limits for currency conversion
+    var minAmount = 0.01; 
+    var maxAmount = 1000000000;
+
+    // Is amount within the limits
+    if (amount < minAmount || amount > maxAmount) {
+        document.getElementById('result').value = 'Invalid Input!';
+        amountInput.value = '';
+        return false;
+    }
+
+    // If all validation passes, return true
+    return true;
+}
+
 async function convertCurrency() {
+    // Validate the input
+    if (!validateAmount()) {
+        return;
+    }
     const conversionRates = await getConversionRates();
     // Get the amount from the input field
     const amount = parseFloat(document.getElementById('amount').value);
