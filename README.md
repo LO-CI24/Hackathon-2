@@ -4,14 +4,14 @@
 ## A hackathon project by team **cj(s).jammers**
 
 ### Table of Contents
-1. [Project Description](https://github.com/maria-grozova/Celebrating-Diversity/blob/main/README.md#1-project-description)
-2. [Hackathon Project Rules and Guidelines](https://github.com/maria-grozova/Celebrating-Diversity/blob/main/README.md#2-hackathon-project-rules-and-guidelines)
-3. [Background Research](https://github.com/maria-grozova/Celebrating-Diversity/blob/main/README.md#3-background-research)
-4. [Design Process](https://github.com/maria-grozova/Celebrating-Diversity/blob/main/README.md#4-design-process)
-5. [How to Use Take the Money and Run](https://github.com/maria-grozova/Celebrating-Diversity/blob/main/README.md#5-how-to-use-celebrating-diversity)
-6. [Testing Documentation](https://github.com/maria-grozova/Celebrating-Diversity/blob/main/README.md#6-testing-documentation)
-7. [Credits](https://github.com/maria-grozova/Celebrating-Diversity/blob/main/README.md#7-credits)
-8. [Licencing Rights](https://github.com/maria-grozova/Celebrating-Diversity/blob/main/README.md#8-licencing-rights)
+1. [Project Description](https://github.com/LO-CI24/Hackathon-2/blob/main/README.md#1-project-description)
+2. [Hackathon Project Rules and Guidelines](https://github.com/LO-CI24/Hackathon-2/blob/main/README.md#2-hackathon-project-rules-and-guidelines)
+3. [Background Research](https://github.com/LO-CI24/Hackathon-2/blob/main/README.md#3-background-research)
+4. [Design Process](https://github.com/LO-CI24/Hackathon-2/blob/main/README.md#4-design-process)
+5. [How to Use Take the Money and Run](https://github.com/LO-CI24/Hackathon-2/blob/main/README.md#5-how-to-use-take-the-money-and-run)
+6. [Testing Documentation](https://github.com/LO-CI24/Hackathon-2/blob/main/README.md#6-testing-documentation)
+7. [Credits](https://github.com/LO-CI24/Hackathon-2/blob/main/README.md#7-credits)
+8. [Licencing Rights](https://github.com/LO-CI24/Hackathon-2/blob/main/README.md#8-licencing-rights)
 
 
 
