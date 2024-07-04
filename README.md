@@ -23,7 +23,7 @@ This is a hackathon project for Code Institute, focusing on the development and 
 
 The information within intends to inform and advise the user on how much their money is worth when exchanged from one currency to another.
 
-The goal of the site owner and our objective is to be able to provide this infromation in an accessible, informative way, with a clean and clear UI. 
+The goal of the site owner and our objective is to be able to provide this information in an accessible, informative way, with a clean and clear UI. 
 
 ## 2. Hackathon Project Rules and Guidelines
 
