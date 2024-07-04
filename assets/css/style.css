@@ -58,6 +58,8 @@
     margin-top: 50px;
     font-weight: 700;
     font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px; 
     width: auto;
     min-width: 300px;
     display: flex;
@@ -106,6 +108,7 @@ a:hover {
 }
 
 /**Bootstrap override for title hover function**/
+
 .h1:hover {
     font-size: 20px;
     color: #f5f5f5;
@@ -129,7 +132,7 @@ a:hover {
 }
 
 .top-currency-box {
-    margin-top: 50px;
+    margin-top: 25px;
     margin-bottom: 20px;
     font-size: 23px;
     font-family: "Noto Sans", sans-serif;
