@@ -21,7 +21,7 @@ function validateAmount() {
 
     // is the input a valid number
     if (isNaN(amountValue) || amountValue === '') {
-        document.getElementById('result').value = 'Invalid Input!';
+        document.getElementById('result').value = 'Please input a number!';
         amountInput.value = '';
         return false;
     }
@@ -30,15 +30,22 @@ function validateAmount() {
     var amount = parseFloat(amountValue);
 
     // Set sensible limits for currency conversion
-    var minAmount = 0.01; 
+    var minAmount = 0.01;
     var maxAmount = 1000000000;
 
     // Is amount within the limits
-    if (amount < minAmount || amount > maxAmount) {
-        document.getElementById('result').value = 'Invalid Input!';
+    if (amount < minAmount) {
+        document.getElementById('result').value = 'Input too small!';
+        amountInput.value = '';
+        return false;
+    } else if (amount > maxAmount) {
+        document.getElementById('result').value = 'Input too large, please donate to charity!';
         amountInput.value = '';
         return false;
     }
+
+    
+
 
     // If all validation passes, return true
     return true;
@@ -64,3 +71,4 @@ async function convertCurrency() {
     // Display the result. Output is three decimal places as number is rounded up
     document.getElementById('result').value = `Amount in ${targetCurrency}: ${convertedAmount.toLocaleString(undefined, {minimumFractionDigits: 3, maximumFractionDigits: 3})}`;
 }
+
