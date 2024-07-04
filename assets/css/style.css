@@ -3,32 +3,38 @@
     background-color: #2F3E46;
     height: 130px;
 }
+
 .body-light-green {
     background-color: #2F3E4625;
     height: 100%;
 }
+
 .background-footer {
     background-color: #2F3E46;
-} 
+}
 
 /** Container override **/
 .container-override {
     min-width: 100%;
 }
+
 .padding-margin-override {
     padding-left: 0px;
     padding-right: 0px;
     margin-left: 0px;
     margin-right: 0px;
 }
+
 .row {
     --bs-gutter-x: 0;
     --bs-gutter-y: 0;
 }
+
 .container {
     --bs-gutter-x: 0;
     --bs-gutter-y: 0;
 }
+
 .container-fluid {
     --bs-gutter-x: 0;
     --bs-gutter-y: 0;
@@ -59,7 +65,7 @@
     font-weight: 700;
     font-size: 16px;
     padding-left: 20px;
-    padding-right: 20px; 
+    padding-right: 20px;
     width: auto;
     min-width: 300px;
     display: flex;
@@ -75,6 +81,7 @@
     font-size: 25px;
     font-weight: 500;
 }
+
 footer p {
     color: #F5F5F5;
     font-family: 'Noto Sans', sans-serif;
@@ -84,7 +91,7 @@ footer p {
 }
 
 a {
-    color:#F5f5f5
+    color: #F5f5f5
 }
 
 .container-no-bs {
@@ -116,6 +123,7 @@ a:hover {
     white-space: nowrap;
     font-family: 'Noto Sans', sans-serif;
 }
+
 .converted-sum {
     color: #2F3E46;
 }
@@ -137,12 +145,12 @@ a:hover {
     font-size: 23px;
     font-family: "Noto Sans", sans-serif;
     font-weight: 500;
-    width: 300px; 
+    width: 300px;
     border-color: #2F3E46;
     border-width: 2px;
     border-radius: 10px;
     color: #2F3E46;
-}  
+}
 
 .currency-box {
     margin-top: 20px;
@@ -197,6 +205,7 @@ a:hover {
     width: 150px;
     border-radius: 20px;
 }
+
 .conversion-button:hover {
     background-color: #F5F5F5;
     color: #52796F;
