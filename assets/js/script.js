@@ -62,5 +62,5 @@ async function convertCurrency() {
     const amountInUSD = amount / sourceToUSD;
     const convertedAmount = amountInUSD * targetFromUSD;
     // Display the result. Output is three decimal places as number is rounded up
-    document.getElementById('result').value = `Amount in ${targetCurrency}: ${convertedAmount.toFixed(3)}`;
+    document.getElementById('result').value = `Amount in ${targetCurrency}: ${convertedAmount.toLocaleString(undefined, {minimumFractionDigits: 3, maximumFractionDigits: 3})}`;
 }
