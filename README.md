@@ -4,15 +4,14 @@
 ## A hackathon project by team **cj(s).jammers**
 
 ### Table of Contents
-1. [Project Description](https://github.com/maria-grozova/Celebrating-Diversity/blob/main/README.md#1-project-description)
-2. [Hackathon Project Rules and Guidelines](https://github.com/maria-grozova/Celebrating-Diversity/blob/main/README.md#2-hackathon-project-rules-and-guidelines)
-3. [Background Research](https://github.com/maria-grozova/Celebrating-Diversity/blob/main/README.md#3-background-research)
-4. [Design Process](https://github.com/maria-grozova/Celebrating-Diversity/blob/main/README.md#4-design-process)
-5. [How to Use Celebrating Diversity](https://github.com/maria-grozova/Celebrating-Diversity/blob/main/README.md#5-how-to-use-celebrating-diversity)
-6. [Testing Documentation](https://github.com/maria-grozova/Celebrating-Diversity/blob/main/README.md#6-testing-documentation)
-7. [Credits](https://github.com/maria-grozova/Celebrating-Diversity/blob/main/README.md#7-credits)
-8. [Licencing Rights](https://github.com/maria-grozova/Celebrating-Diversity/blob/main/README.md#8-licencing-rights)
-9. [Other Documents](https://github.com/maria-grozova/Celebrating-Diversity/blob/main/README.md#9-ohter-documents)
+1. [Project Description](https://github.com/LO-CI24/Hackathon-2/blob/main/README.md#1-project-description)
+2. [Hackathon Project Rules and Guidelines](https://github.com/LO-CI24/Hackathon-2/blob/main/README.md#2-hackathon-project-rules-and-guidelines)
+3. [Background Research](https://github.com/LO-CI24/Hackathon-2/blob/main/README.md#3-background-research)
+4. [Design Process](https://github.com/LO-CI24/Hackathon-2/blob/main/README.md#4-design-process)
+5. [How to Use Take the Money and Run](https://github.com/LO-CI24/Hackathon-2/blob/main/README.md#5-how-to-use-take-the-money-and-run)
+6. [Testing Documentation](https://github.com/LO-CI24/Hackathon-2/blob/main/README.md#6-testing-documentation)
+7. [Credits](https://github.com/LO-CI24/Hackathon-2/blob/main/README.md#7-credits)
+8. [Licencing Rights](https://github.com/LO-CI24/Hackathon-2/blob/main/README.md#8-licencing-rights)
 
 
 
@@ -74,7 +73,62 @@ For our wire-framing, we decided to stick to low fidelity wireframes. This is du
 
 ### Coding the Site
 
+**JavaScript**
 
+As the JS is the primary element of the assessment of this Hackathon, it will be reviewed first. 
+
+Below is the fetch request for the API. This is written to collect the JSON, and within that JSON it collects the data within the object. The API chosen stores the information as an array, which has a second level of data. The data.data in this instance grabs both elements which are stored as [CURRENCY_CODE : CONVERSION_RATE] with both elements serving as strings, and the conversion rate is necessary for our calculations. This is an await function, as it is necessary for the function to complete fully before it runs the next block of code.
+
+![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/3269c7ef-cc50-4d70-a0b0-6c3f76788017)
+
+![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/e73727f5-4f38-4bca-ad63-0caa139f836e)
+
+This information is then passed into an async function. This function first parses the string for the conversion rate to a float. It then collects the information for which currencies are selected from a getElementByID function which targets the selectors. It then identifies which is the currency to convert from, and which is the currency to convert to. From there, it then converts those currencies into the appropriate sum, and displays that result in the text box 'result' in the HTML.
+
+![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/4ea46faf-5f9c-4468-aacf-0559de539f5f)
+
+**HTML**
+
+The HTML for the application calls on a number of external CDNs and libraries. As seen below, it calls on Bootstrap and Google Fonts.
+
+![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/1ebf814b-7de2-4028-ba6d-66a8cb440d89)
+
+The header is constructed using a Bootstrap Navbar, which has all link functionality removed. In essence, this makes it a simple branding bar. It includes our logo, and our title.
+
+![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/3db19cec-9cbf-4d82-a645-3d400335cf59)
+
+Similarly, our Hero image is also simplistically designed, calling just on a container, row and col, to make it responsive in the first instance. 
+
+![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/c57293bb-c3a2-427a-849c-66e6868aaead)
+
+Our Main section is a bit more complexly put together, consisting of a number of input boxes. Each of these is assigned classes and IDs which allow them to targeted and selected by the JS and CSS.
+
+![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/eb62296e-0f72-4460-9023-8335fbe0af1a)
+
+![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/b786df0c-4d7f-461c-aabb-b9a1c5a7ddb4)
+
+![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/6ebe57ef-1232-416e-b3e3-4644801b0d9f)
+
+These input boxes allow for the user to input a sum they wish to convert, and then to select the origin currency and the target currency. Then, once they hit the Convert button, it presents the result in the disabled input box. This input box is disabled to prevent the user getting confused or inputting information into the incorrect box.
+
+Our footer is also simple, consisting of just some containers, rows and cols, which have an empty col in the middle to align the other items within the container. Inside are two links, which are mandatory attributions.
+
+![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/6a6b7267-f167-4bb7-b3a0-6f7f3c9b4a60)
+
+
+**CSS**
+
+Our CSS contains no surprises, consisting primarily of classes which have been targeted based on their placement within the HTML to change colours and add functionality where necessary.
+
+![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/cf2fe03a-3668-4f0d-9887-829bedf36596)
+
+The only true outliers in the CSS code are the specific overrides for Bootstrap default styling which had to be used to get items to position appropriately.
+
+![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/28f388e0-11e9-4e7f-bf13-736d0f2f9a9d)
+
+![image](https://github.com/LO-CI24/Hackathon-2/assets/139562112/72e661a3-e960-4167-97b9-257d3ea35a88)
+
+As seen above, a number of override inputs were necessary. This was due to our selection of Bootstrap 5.2, which is not the version of Bootstrap we learned upon. This means that the gutter functions and how they operate have changed, and it was more expedient to simply kill all of the guttering than to attempt to solve in the Sass / SCSS compilation for Bootstrap this information was stored.
 
 ##  5. How to Use Take the Money and Run
 
