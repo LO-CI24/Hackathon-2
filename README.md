@@ -11,7 +11,7 @@
 5. [How to Use Take the Money and Run](https://github.com/LO-CI24/Hackathon-2/blob/main/README.md#5-how-to-use-take-the-money-and-run)
 6. [Testing Documentation](https://github.com/LO-CI24/Hackathon-2/blob/main/README.md#6-testing-documentation)
 7. [Credits](https://github.com/LO-CI24/Hackathon-2/blob/main/README.md#7-credits)
-8. [Licencing Rights](https://github.com/LO-CI24/Hackathon-2/blob/main/README.md#8-licencing-rights)
+8. [Licensing Rights](https://github.com/LO-CI24/Hackathon-2/blob/main/README.md#8-licencing-rights)
 
 
 
@@ -153,7 +153,7 @@ These developers are...
 **Ted Aymler**
 **Carl Jones**
   
-##  8. Licencing Rights
+##  8. Licensing Rights
 
 For the construction of this website, we have used a number of assets which are not made by ourselves. They are, however, covered by Open Source licencing, and are fair use under a Creative Commons licence.
 
