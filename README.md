@@ -229,9 +229,11 @@ It was unclear how to clear these warnings, and they do not appear to have any e
 This project was worked on and developed by a team of 3 developers. 
 These developers are... 
   
-**Leander Ots**
-**Ted Aymler**
-**Carl Jones**
+- **Leander Ots**
+  
+- **Ted Aymler**
+  
+- **Carl Jones**
   
 ##  8. Licensing Rights
 
